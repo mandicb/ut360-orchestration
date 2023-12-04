@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\Orchestration.Models.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="MediatR">
+        <HintPath>C:\Users\mitjas\.nuget\packages\mediatr\12.1.1\lib\net6.0\MediatR.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

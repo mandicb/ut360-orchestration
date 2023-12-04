@@ -1,0 +1,10 @@
+namespace Orchestration.Models;
+
+/// <summary>
+/// 
+/// </summary>
+public class PaginationRequestModel
+{
+    public int Skip { get; set; }
+    public int Take { get; set; }
+}

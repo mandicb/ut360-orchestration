@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\..\Libraries\Utrust360.CommunicationManager\Utrust360.CommunicationManager.csproj" />
+      <ProjectReference Include="..\Orchestration.Exceptions\Orchestration.Exceptions.csproj" />
+      <ProjectReference Include="..\Orchestration.Models\Orchestration.Models.csproj" />
+    </ItemGroup>
+
+</Project>

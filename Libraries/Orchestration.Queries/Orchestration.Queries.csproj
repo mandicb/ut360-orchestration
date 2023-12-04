@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Orchestration.DataContext\Orchestration.DataContext.csproj" />
+      <ProjectReference Include="..\Orchestration.Exceptions\Orchestration.Exceptions.csproj" />
+      <ProjectReference Include="..\Orchestration.Models\Orchestration.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Providers\" />
+    </ItemGroup>
+
+</Project>
